@@ -85,12 +85,59 @@ if(computerSelection === "rock" && playerSelection === "rock"){
 
    console.log("Win");
 
-}  else if ((playerSelection === "rock") || (playerSelection === "Rock") || (playerSelection === "ROCK") && computerSelection === "paper") {
+}  else if ((playerSelection === "rock") 
+// || (playerSelection === "Rock") || (playerSelection === "ROCK") 
+&& computerSelection === "paper") {
 
     console.log("Loss");
 
     // console.log(computerSelection)
+} else if(computerSelection === "rock" && playerSelection === "scissors"){
+    console.log("Loss")
+}
+// if((playerSelection === "rock") || (playerSelection === "Rock") || (playerSelection === "ROCK") && computerSelection === "rock") {
+
+//     console.log("Draw"); 
+
+// }
+ else if(
+     (playerSelection === "scissors") 
+    //  || (playerSelection === "Rock") || (playerSelection === "ROCK") 
+     && computerSelection === "scissors") {
+
+   console.log("Draw");
+
+}  else if ((playerSelection === "scissors") 
+// || (playerSelection === "Rock") || (playerSelection === "ROCK") 
+&& computerSelection === "paper") {
+
+    console.log("Win");
+
+    // console.log(computerSelection)
+} else if(computerSelection === "rock" && playerSelection === "paper"){
+    console.log("Win")
+}
+// if((playerSelection === "rock") || (playerSelection === "Rock") || (playerSelection === "ROCK") && computerSelection === "rock") {
+
+//     console.log("Draw"); 
+
+// }
+ else if(
+     (playerSelection === "paper") 
+    //  || (playerSelection === "Rock") || (playerSelection === "ROCK") 
+     && computerSelection === "scissors") {
+
+   console.log("Loss");
+
+}  else if ((playerSelection === "paper") 
+// || (playerSelection === "Rock") || (playerSelection === "ROCK") 
+&& computerSelection === "paper") {
+
+    console.log("Draw");
+
+    // console.log(computerSelection)
 } 
+
 
 }
 

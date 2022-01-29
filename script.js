@@ -46,7 +46,7 @@
 function playComputer() {
     let options = ["rock", "paper", "scissors"];
     let chosenOption = options[Math.floor(Math.random()*options.length)];
-    alert("Computer choice is " + chosenOption);
+    return chosenOption;
     }
     
 
@@ -57,7 +57,7 @@ function playComputer() {
 
 function playRound(playerSelection, computerSelection) {
 
-const computerSelection = playComputer();
+// const computerSelection = playComputer();
 
 if((playerSelection === "rock" || playerSelection === "Rock" || playerSelection === "ROCK") && computerSelection === "rock") {
 
@@ -71,4 +71,22 @@ if((playerSelection === "rock" || playerSelection === "Rock" || playerSelection 
 
     return "Loss";
 
+
+    console.log(computerSelection)
 } }
+
+
+
+
+
+// function passAsArgument() {
+
+// return 1;
+// }
+// let a = 1;
+// function sum(b, c){
+
+//     return b + c;
+// }
+
+// sum(a, passAsArgument())

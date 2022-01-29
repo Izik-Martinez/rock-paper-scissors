@@ -43,11 +43,11 @@
 
 
 
-function playComputer() {
-    let options = ["rock", "paper", "scissors"];
-    let chosenOption = options[Math.floor(Math.random()*options.length)];
-    return chosenOption;
-    }
+// function playComputer() {
+//     let options = ["rock", "paper", "scissors"];
+//     let chosenOption = options[Math.floor(Math.random()*options.length)];
+//     return chosenOption;
+//     }
     
 
 // const playerSelection = "rock";
@@ -55,9 +55,17 @@ function playComputer() {
 // console.log(playRound(playerSelection, computerSelection));
 
 
-function playRound(playerSelection, computerSelection) {
+function playRound(playerSelection) {
 
 // const computerSelection = playComputer();
+
+
+
+function playComputer() {
+    let options = ["rock", "paper", "scissors"];
+    let computerSelection = options[Math.floor(Math.random()*options.length)];
+    // return computerSelection;
+
 
 if((playerSelection === "rock" || playerSelection === "Rock" || playerSelection === "ROCK") && computerSelection === "rock") {
 
@@ -72,8 +80,8 @@ if((playerSelection === "rock" || playerSelection === "Rock" || playerSelection 
     return "Loss";
 
 
-    console.log(computerSelection)
-} }
+    // console.log(computerSelection)
+} }}
 
 
 

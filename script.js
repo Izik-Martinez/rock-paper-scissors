@@ -39,12 +39,17 @@
 
 
 
-function playHuman() {
-
+function playComputer() {
 let options = ["rock", "paper", "scissors"];
 let chosenOption = options[Math.floor(Math.random()*options.length)];
 alert("Computer choice is " + chosenOption);
-
-
 }
 
+function playRound(playerSelection, computerSelection) {
+
+
+
+
+
+    
+}

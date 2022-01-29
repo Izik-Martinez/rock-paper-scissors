@@ -70,7 +70,9 @@ function playRound(playerSelection) {
 
     //  }
 
-if(computerSelection === "rock" && playerSelection === "rock"){
+if(     (playerSelection === "rock") || (playerSelection === "Rock") && (computerSelection === "rock") )
+
+{
     console.log("Draw")
 }
 // if((playerSelection === "rock") || (playerSelection === "Rock") || (playerSelection === "ROCK") && computerSelection === "rock") {
@@ -79,13 +81,13 @@ if(computerSelection === "rock" && playerSelection === "rock"){
 
 // }
  else if(
-     (playerSelection === "rock") 
+     ((playerSelection === "rock") || (playerSelection === "Rock") || (playerSelection === "ROCK")) 
     //  || (playerSelection === "Rock") || (playerSelection === "ROCK") 
      && computerSelection === "scissors") {
 
    console.log("Win");
 
-}  else if ((playerSelection === "rock") 
+}  else if (((playerSelection === "rock") || (playerSelection === "Rock") || (playerSelection === "ROCK") )
 // || (playerSelection === "Rock") || (playerSelection === "ROCK") 
 && computerSelection === "paper") {
 

@@ -39,17 +39,36 @@
 
 
 
+
+
+
+
 function playComputer() {
-let options = ["rock", "paper", "scissors"];
-let chosenOption = options[Math.floor(Math.random()*options.length)];
-alert("Computer choice is " + chosenOption);
-}
+    let options = ["rock", "paper", "scissors"];
+    let chosenOption = options[Math.floor(Math.random()*options.length)];
+    alert("Computer choice is " + chosenOption);
+    }
+    
+
+// const playerSelection = "rock";
+// const computerSelection = playComputer();
+// console.log(playRound(playerSelection, computerSelection));
+
 
 function playRound(playerSelection, computerSelection) {
 
+const computerSelection = playComputer();
 
+if((playerSelection === "rock" || playerSelection === "Rock" || playerSelection === "ROCK") && computerSelection === "rock") {
 
+    return "Draw";
 
+} else if((playerSelection === "rock" || playerSelection === "Rock" || playerSelection === "ROCK") && computerSelection === "scissors") {
 
-    
-}
+    return "Win";
+
+} else if((playerSelection === "rock" || playerSelection === "Rock" || playerSelection === "ROCK") && computerSelection === "paper") {
+
+    return "Loss";
+
+} }

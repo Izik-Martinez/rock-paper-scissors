@@ -63,25 +63,30 @@ function playRound(playerSelection) {
 
 function playComputer() {
     let options = ["rock", "paper", "scissors"];
-    let computerSelection = options[Math.floor(Math.random()*options.length)];
-    // return computerSelection;
+
+    let computerSelection = options[Math.floor(Math.random() * options.length)];
+  
+
+     }
 
 
-if((playerSelection === "rock" || playerSelection === "Rock" || playerSelection === "ROCK") && computerSelection === "rock") {
+if(playerSelection === "rock" || playerSelection === "Rock" || playerSelection === "ROCK" && playComputer() === "rock") {
 
-    return "Draw";
+    console.log("Draw"); 
 
-} else if((playerSelection === "rock" || playerSelection === "Rock" || playerSelection === "ROCK") && computerSelection === "scissors") {
+} else if(playerSelection === "rock" || playerSelection === "Rock" || playerSelection === "ROCK" && playComputer() === "scissors") {
 
     return "Win";
 
-} else if((playerSelection === "rock" || playerSelection === "Rock" || playerSelection === "ROCK") && computerSelection === "paper") {
+} else if(playerSelection === "rock" || playerSelection === "Rock" || playerSelection === "ROCK" && playComputer() === "paper") {
 
     return "Loss";
 
 
     // console.log(computerSelection)
-} }}
+} 
+
+}
 
 
 

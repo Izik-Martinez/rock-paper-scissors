@@ -70,7 +70,7 @@ function playRound(playerSelection) {
 
     //  }
 
-if(     (playerSelection === "rock") || (playerSelection === "Rock") && (computerSelection === "rock") )
+if(     ((playerSelection === "rock") || (playerSelection === "Rock" || playerSelection === "ROCK")) && (computerSelection === "rock") )
 
 {
     console.log("Draw")
@@ -94,7 +94,8 @@ if(     (playerSelection === "rock") || (playerSelection === "Rock") && (compute
     console.log("Loss");
 
     // console.log(computerSelection)
-} else if(computerSelection === "rock" && playerSelection === "scissors"){
+} else if(((playerSelection === "scissors") || (playerSelection === "Scissors") || (playerSelection === "SCISSORS")) 
+&& computerSelection === "rock"){
     console.log("Loss")
 }
 // if((playerSelection === "rock") || (playerSelection === "Rock") || (playerSelection === "ROCK") && computerSelection === "rock") {
@@ -103,20 +104,18 @@ if(     (playerSelection === "rock") || (playerSelection === "Rock") && (compute
 
 // }
  else if(
-     (playerSelection === "scissors") 
-    //  || (playerSelection === "Rock") || (playerSelection === "ROCK") 
+     (playerSelection === "scissors") || (playerSelection === "Scissors") || (playerSelection === "SCISSORS") 
      && computerSelection === "scissors") {
 
    console.log("Draw");
 
-}  else if ((playerSelection === "scissors") 
-// || (playerSelection === "Rock") || (playerSelection === "ROCK") 
+}  else if (((playerSelection === "scissors") || (playerSelection === "Scissors") || (playerSelection === "SCISSORS")) 
 && computerSelection === "paper") {
 
     console.log("Win");
 
     // console.log(computerSelection)
-} else if(computerSelection === "rock" && playerSelection === "paper"){
+} else if(((playerSelection === "paper") || (playerSelection === "Paper") || (playerSelection === "PAPER")) && computerSelection === "rock"){
     console.log("Win")
 }
 // if((playerSelection === "rock") || (playerSelection === "Rock") || (playerSelection === "ROCK") && computerSelection === "rock") {
@@ -125,13 +124,12 @@ if(     (playerSelection === "rock") || (playerSelection === "Rock") && (compute
 
 // }
  else if(
-     (playerSelection === "paper") 
-    //  || (playerSelection === "Rock") || (playerSelection === "ROCK") 
+     ((playerSelection === "paper") || (playerSelection === "Paper") || (playerSelection === "PAPER")) 
      && computerSelection === "scissors") {
 
    console.log("Loss");
 
-}  else if ((playerSelection === "paper") 
+}  else if (((playerSelection === "paper") || (playerSelection === "Paper") || (playerSelection === "PAPER")) 
 // || (playerSelection === "Rock") || (playerSelection === "ROCK") 
 && computerSelection === "paper") {
 
@@ -158,3 +156,4 @@ if(     (playerSelection === "rock") || (playerSelection === "Rock") && (compute
 // }
 
 // sum(a, passAsArgument())
+

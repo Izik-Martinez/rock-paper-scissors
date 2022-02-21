@@ -66,7 +66,7 @@ function playRound(playerSelection) {
 
     let computerSelection = options[Math.floor(Math.random() * options.length)];
   
-    console.log(computerSelection)
+    console.log(`Computer chose: ${computerSelection}`)
 
     //  }
 

@@ -55,6 +55,28 @@
 // console.log(playRound(playerSelection, computerSelection));
 
 
+let score = document.getElementById("score");
+let primary = document.getElementById("primary")
+let success = document.getElementById("success")
+let danger = document.getElementById("danger")
+
+
+primary.addEventListener("click", function(){
+    playRound("paper")
+})
+
+success.addEventListener("click", function(){
+
+ playRound("rock")
+
+})
+
+danger.addEventListener("click", function(){
+
+playRound("SCISSORS")
+
+})
+
 function playRound(playerSelection) {
 
 // const computerSelection = playComputer();
@@ -85,7 +107,8 @@ if(     ((playerSelection === "rock") || (playerSelection === "Rock" || playerSe
     //  || (playerSelection === "Rock") || (playerSelection === "ROCK") 
      && computerSelection === "scissors") {
 
-   console.log("Win");
+        document.getElementById('score').innerHTML = "";
+        document.getElementById('score').innerHTML = `Computer chose ${computerSelection}. You win!`;
 
 }  else if (((playerSelection === "rock") || (playerSelection === "Rock") || (playerSelection === "ROCK") )
 // || (playerSelection === "Rock") || (playerSelection === "ROCK") 
@@ -112,11 +135,14 @@ if(     ((playerSelection === "rock") || (playerSelection === "Rock" || playerSe
 }  else if (((playerSelection === "scissors") || (playerSelection === "Scissors") || (playerSelection === "SCISSORS")) 
 && computerSelection === "paper") {
 
-    console.log("Win");
+    document.getElementById('score').innerHTML = "";
+    document.getElementById('score').innerHTML = `Computer chose ${computerSelection}. You win!`;
 
     // console.log(computerSelection)
 } else if(((playerSelection === "paper") || (playerSelection === "Paper") || (playerSelection === "PAPER")) && computerSelection === "rock"){
     console.log("Win")
+    document.getElementById('score').innerHTML = "";
+    document.getElementById('score').innerHTML = `Computer chose ${computerSelection}. You win!`;
 }
 // if((playerSelection === "rock") || (playerSelection === "Rock") || (playerSelection === "ROCK") && computerSelection === "rock") {
 
@@ -126,9 +152,10 @@ if(     ((playerSelection === "rock") || (playerSelection === "Rock" || playerSe
  else if(
      ((playerSelection === "paper") || (playerSelection === "Paper") || (playerSelection === "PAPER")) 
      && computerSelection === "scissors") {
-
+   
    console.log("Loss");
-
+   document.getElementById('score').innerHTML = "";
+   document.getElementById('score').innerHTML = computerSelection;
 }  else if (((playerSelection === "paper") || (playerSelection === "Paper") || (playerSelection === "PAPER")) 
 // || (playerSelection === "Rock") || (playerSelection === "ROCK") 
 && computerSelection === "paper") {

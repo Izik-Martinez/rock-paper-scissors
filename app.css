@@ -50,12 +50,14 @@ div .col-sm {
     justify-content: center;
 }
 
-div .score {
+#score {
      
       background-color: aqua;
       border: 1px solid black;
       height: 50%;
       width: 50%;
-      
+      display: flex;
+      justify-content: center;
+      align-items: center;
      
 }

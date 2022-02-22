@@ -1,0 +1,61 @@
+* {
+
+ padding: 0%;
+ margin: 0%;
+
+}
+
+body {
+
+ background-image: url(rockBackground.jfif);
+
+
+}
+
+.flex {
+
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  min-height: 200px;
+  min-width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.btn-primary {
+
+margin-right: 5%;
+
+}
+.btn-danger {
+    margin-left: 5%;
+}
+.btn {
+
+height: 40%;
+width: 30%;
+align-self: flex-start;
+margin-top: 20%;
+
+
+}
+div .col-sm {
+    
+    background-color: aquamarine;
+    border: 1px solid black;
+    min-height: 33.33vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div .score {
+     
+      background-color: aqua;
+      border: 1px solid black;
+      height: 50%;
+      width: 50%;
+      
+     
+}

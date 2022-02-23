@@ -38,13 +38,19 @@ text-decoration: underline;
 
 margin-right: 5%;
 
+
+}
+
+#primary{
+
+  /* height: 60px !important; */
 }
 .btn-danger {
     margin-left: 5%;
 }
 .btn {
 
-height: 40%;
+ 
 width: 30%;
 align-self: flex-start;
 margin-top: 20%;
@@ -75,3 +81,4 @@ div .col-sm {
       box-shadow: 5px 5px black;
      
 }
+

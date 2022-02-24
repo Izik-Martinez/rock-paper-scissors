@@ -23,6 +23,18 @@ justify-content: center;
 align-items: center;
 text-decoration: underline;
 }
+
+
+#wrap:hover{
+
+
+
+  text-decoration: underline wavy;
+  text-decoration-color: #0000;
+  transition: 2s ease-in;
+
+
+}
 .flex {
 
   display: flex;
@@ -32,6 +44,8 @@ text-decoration: underline;
   min-width: 400px;
   justify-content: center;
   align-items: center;
+  gap: 40px;
+  
 }
  
 .btn-primary {
@@ -41,20 +55,22 @@ margin-right: 5%;
 
 }
 
-#primary{
 
-  /* height: 60px !important; */
-}
 .btn-danger {
     margin-left: 5%;
 }
 .btn {
 
  
-width: 30%;
+
 align-self: flex-start;
-margin-top: 20%;
+margin-top: 20px;
 box-shadow: 3px 3px black;
+height: 160px;
+width: 160px;
+font-size: 1.5rem !important;
+padding: 0% !important;
+color: black!important;
 
 
 }
